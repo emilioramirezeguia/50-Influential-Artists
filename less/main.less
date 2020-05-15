@@ -2,9 +2,7 @@
   background-image: url("../assets/home.png");
   background-repeat: no-repeat;
   background-size: cover;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  .flex-column();
   justify-content: center;
   height: 80vh;
   margin: 0 7.5% 2.5%;
@@ -12,15 +10,11 @@
     color: white;
     font-size: 6rem;
     font-weight: bold;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    .flex-column();
     letter-spacing: 1px;
   }
   button {
-    font-size: 1.6rem;
-    padding: 1% 3%;
-    margin: 1% 0;
+    .button(@standard-size, none);
   }
 }
 
@@ -34,9 +28,7 @@ hr {
   justify-content: center;
   margin: 0 7.5%;
   .artist {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    .flex-column();
     padding: 5%;
     width: 50%;
     .artist-image {
@@ -48,7 +40,7 @@ hr {
     }
     a {
       color: black;
-      font-size: 2.4rem;
+      font-size: @h2-size;
       margin: 3% 0;
       text-decoration: none;
     }
