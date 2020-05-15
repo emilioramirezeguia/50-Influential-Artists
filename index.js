@@ -246,9 +246,14 @@ console.log(artists[9].name);
  * For example, if getArtistByIndex is invoked with the inventory and the number 0,
  * it will return `The artist at index 0 is Amedeo Modigliani`.
  */
-function getArtistByIndex(id, name) {
-  /* code here */
+function getArtistByIndex(artists, id) {
+  console.log("=== Task 3 ===");
+  const artistId = artists[id].id;
+  const artistName = artists[id].name;
+  console.log(`The artist at index ${artistId} is ${artistName}`);
 }
+
+getArtistByIndex(artists, 0);
 
 /**
 
