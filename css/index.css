@@ -124,3 +124,28 @@ header nav a:nth-child(2) {
   border-left: 2px solid black;
   border-right: 2px solid black;
 }
+.title-container {
+  background-image: url("../assets/home.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 80vh;
+  margin: 2.5% 7.5%;
+}
+.title-container h1 {
+  color: white;
+  font-size: 6rem;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  letter-spacing: 1px;
+}
+.title-container button {
+  font-size: 1.6rem;
+  padding: 1% 3%;
+  margin: 1% 0;
+}
