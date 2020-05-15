@@ -368,7 +368,7 @@ function getHTML(/* Code here */) {
   /* Code here */
 }
 
-/* STRETCH 3: Create a function called `randomize` that takes a data array as an argument and returns a the same array in a randomized order. */
+/* STRETCH 3: Create a function called `randomize` that takes a data array as an argument and returns the same array in a randomized order. */
 
 function randomize(/* Code here */) {
   /* Code here */

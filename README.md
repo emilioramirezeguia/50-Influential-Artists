@@ -25,12 +25,26 @@ Demonstrate your understanding of this week's concepts by answering the followin
 Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your project manager
 
 1. How would you describe preprocessing to someone new to CSS?
+
+CSS has a set numbers of things it can do. Preprocessing extends those capabilities by allowing you to write CSS in a more flexible language and converting it to CSS when you're done.
+
 2. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
+
+Mixins are fun, especially when working with flexbox. At firs the nesting was pretty confusing and I found adding media queries tedious, but using escaping made that last part a lot easier.
+
 3. How would you explain the concept of a variable to someone new to programming?
+
+Think of a variable as a jar with some information that has a clear label on it and will be easy for you to use when you need it. You'll usually store information in there that will want to use down the line.
+
 4. What is the purpose of using functions in code?
+
+Functions are meant to help us do repeat a certain actions as many times as we need to without having to type out the same thing every time.
+
 5. What is a JSON data?
 
-You may need to look up an answer but, you are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
+JSON, which stands for JavaScript Object Notation, is information that's stores as an object. That means it's defined by key-value pairs.
+
+You may need to look up an answer but, you are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section _will_ prevent you from passing this challenge.
 
 ## Instructions
 
@@ -47,16 +61,16 @@ Follow these steps to set up your project:
 
 #### Preprocessor Set up
 
-* [ ] Verify that you have LESS installed correctly by running `lessc -v` in your terminal, if you don't get a version message back, reach out to your project manager for help.
-* [ ] In your project's root folder, run the following command `less-watch-compiler less css index.less`
-* [ ] Verify your compiler is working correctly by changing the `background-color` on the `body` selector to `red` in your `index.less` file.
-* [ ] Once you see the red screen, you can delete that style and you're ready to start on the next task
+- [ ] Verify that you have LESS installed correctly by running `lessc -v` in your terminal, if you don't get a version message back, reach out to your project manager for help.
+- [ ] In your project's root folder, run the following command `less-watch-compiler less css index.less`
+- [ ] Verify your compiler is working correctly by changing the `background-color` on the `body` selector to `red` in your `index.less` file.
+- [ ] Once you see the red screen, you can delete that style and you're ready to start on the next task
 
-### Task 2a:  Minimum Viable Product - PreProcessing
+### Task 2a: Minimum Viable Product - PreProcessing
 
 #### Import LESS Files
 
-* [ ] Navigate to your `index.less` file. Notice the file is blank. You have been asked to use a certain import order. That order is as follows:
+- [ ] Navigate to your `index.less` file. Notice the file is blank. You have been asked to use a certain import order. That order is as follows:
 
 ```markdown
 1.variables.less
@@ -68,19 +82,19 @@ Follow these steps to set up your project:
 7.cta.less
 ```
 
-_You will know everything is working properly when you see the styles enabled for the provided content._  
+_You will know everything is working properly when you see the styles enabled for the provided content._
 
 #### Home Page - Desktop HTML & LESS
 
-* [ ] Take 10 minutes to review the code that has already been provided for you. Take time to see how the home page was built.
-* [ ] Add a viewport meta tag to the head of your index.html page.
-* [ ] [Review the provided design files](design/). You have been provided all content necessary in the [index.html file](index.html).
-* [ ] Navigation Styles: Use the `navigation.less` file for styling.
-* [ ] Main Content Styles: Use the `main.less` file for styling.
-* [ ] LESS Mixins: Create and use 2 different mixins to aid your styling. Use the `mixins.less` file for your mixins.
-* [ ] LESS Parametric Mixin: create a parametric mixin that is used to create the `contact us` button styles.
-* [ ] Use at least 2 parameters to create your button.
-* [ ] Add responsive breakpoints to your code for 500px such that your styles match the mobile design file.
+- [ ] Take 10 minutes to review the code that has already been provided for you. Take time to see how the home page was built.
+- [ ] Add a viewport meta tag to the head of your index.html page.
+- [ ] [Review the provided design files](design/). You have been provided all content necessary in the [index.html file](index.html).
+- [ ] Navigation Styles: Use the `navigation.less` file for styling.
+- [ ] Main Content Styles: Use the `main.less` file for styling.
+- [ ] LESS Mixins: Create and use 2 different mixins to aid your styling. Use the `mixins.less` file for your mixins.
+- [ ] LESS Parametric Mixin: create a parametric mixin that is used to create the `contact us` button styles.
+- [ ] Use at least 2 parameters to create your button.
+- [ ] Add responsive breakpoints to your code for 500px such that your styles match the mobile design file.
 
 ### Task 2b: Minimum Viable Product - JavaScript
 
@@ -90,11 +104,11 @@ Navigate to `index.js` and complete the MVP challenges. Note that you need to sc
 
 After finishing your required elements, you can push your work further. These goals may or may not be things you have learned in this module but they build on the material you just studied. Time allowing, stretch your limits and see if you can deliver on the following optional goals, also listed in `index.js`, where applicable:
 
-* [ ] Use JavaScript to programmatically create HTML elements in the console and copy them to display all 20 artists on the page
-* [ ] Create a function called `randomize` that takes a data array as an argument and returns a the same array in a randomized order.
-* [ ] Use advanced array methods (.map, .reduce, .filer) to refactor your MVP code (create an array of all artists born in the 1900s with .filter, for example)
-* [ ] Add responsive breakpoints to your code by using media queries
-* [ ] Add CSS animations
+- [ ] Use JavaScript to programmatically create HTML elements in the console and copy them to display all 20 artists on the page
+- [ ] Create a function called `randomize` that takes a data array as an argument and returns a the same array in a randomized order.
+- [ ] Use advanced array methods (.map, .reduce, .filer) to refactor your MVP code (create an array of all artists born in the 1900s with .filter, for example)
+- [ ] Add responsive breakpoints to your code by using media queries
+- [ ] Add CSS animations
 
 ## Resources
 
@@ -108,6 +122,6 @@ After finishing your required elements, you can push your work further. These go
 
 Follow these steps for completing your project.
 
-- [ ] Submit a Pull-Request to merge <firstName-lastName> Branch into master (student's  Repo). **Please don't merge your own pull request**
+- [ ] Submit a Pull-Request to merge <firstName-lastName> Branch into master (student's Repo). **Please don't merge your own pull request**
 - [ ] Add your team lead as a reviewer on the pull-request
 - [ ] Your team lead will count the project as complete by merging the branch back into master
