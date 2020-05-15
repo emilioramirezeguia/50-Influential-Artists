@@ -304,9 +304,28 @@ genre: Web Design,
 nationality: Your Nationality Here
 bio: Add 1-2 sentences (or use lorem ipsum) "*/
 
-function addArtist(/* Code here */) {
-  /* Code here */
+function addArtist(id, name, years, genre, nationality, bio) {
+  console.log("=== Task 6 ===");
+  const newArtist = {
+    id,
+    name,
+    years,
+    genre,
+    nationality,
+    bio,
+  };
+  artists.push(newArtist);
+  console.log(artists);
 }
+
+addArtist(
+  21,
+  "Emilio",
+  1989,
+  "Web Developer",
+  "Mexican",
+  "Emilio is a student at Lambda School."
+);
 
 // 🎨🎨 STRETCH 🎨🎨//
 
