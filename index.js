@@ -321,7 +321,7 @@ function addArtist(id, name, years, genre, nationality, bio) {
 addArtist(
   21,
   "Emilio",
-  1989,
+  "1989 - Current",
   "Web Developer",
   "Mexican",
   "Emilio is a student at Lambda School."
@@ -331,9 +331,18 @@ addArtist(
 
 /* STRETCH 1: Create a function called get20s() that takes data as an argument and returns an array with names of artists who were born the 20th century (1800-1900) */
 
-function get20s(/* Code here */) {
-  /* Code here */
+function get20s(artists) {
+  console.log("=== Stretch 1 ===");
+  for (let i = 0; i < artists.length; i++) {
+    const bornString = artists[i].years.slice(0, 5);
+    const bornNumber = parseInt(bornString);
+    if (bornNumber >= 1800 && bornNumber <= 1900) {
+      console.log(artists[i].name);
+    }
+  }
 }
+
+get20s(artists);
 
 /* STRETCH 2: Programtically console.log HTML element structure
 
