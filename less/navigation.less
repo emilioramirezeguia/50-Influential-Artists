@@ -1,0 +1,32 @@
+//Header Styles
+header {
+  display: flex;
+  justify-content: center;
+  padding: 3% 5%;
+  @media @mobile {
+    padding: 5% 5%;
+  }
+  nav {
+    text-align: center;
+    width: 50%;
+    @media @mobile {
+      width: 75%;
+    }
+    a {
+      color: black;
+      font-size: @h2-size;
+      padding: 0 3%;
+      text-decoration: none;
+      @media @mobile {
+        font-size: @h3-size;
+      }
+      &:nth-child(1) {
+        font-weight: bold;
+      }
+      &:nth-child(2) {
+        border-left: 2px solid black;
+        border-right: 2px solid black;
+      }
+    }
+  }
+}
